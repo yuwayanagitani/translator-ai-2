@@ -69,11 +69,11 @@ class ConfigDialog(QDialog):
 
         self.source_field_input = QLineEdit(self)
         self.source_field_input.setText(self.config.get("source_field", "Front"))
-        layout.addRow("Source Field", self.source_field_input)
+        layout.addRow("Question Field", self.source_field_input)
 
         self.target_field_input = QLineEdit(self)
         self.target_field_input.setText(self.config.get("target_field", "Back"))
-        layout.addRow("Target Field", self.target_field_input)
+        layout.addRow("Answer Field", self.target_field_input)
 
         self.source_language_input = QLineEdit(self)
         self.source_language_input.setText(
